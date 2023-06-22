@@ -23,18 +23,12 @@ button.addEventListener("click",()=>{
 let code = "https://youtube.com/embed/" + link.slice(17);
 
 
-container.innerHTML = "<iframe  width='420' height='315' src='"+ code +"' > </iframe>"
+container.innerHTML = "<iframe  width='420' height='230' src='"+ code +"' > </iframe>"
 
 
 list.innerHTML += "<li><a href='"+ code +"'>"+code+"</a><button class='play'>Play</button> <button class='remove'>Remove</button> </li> ";
 
     }
-
-
-
-
-  
-    
 })
 
 
@@ -50,15 +44,15 @@ list.addEventListener("click", (event) => {
         const link = event.target.previousElementSibling.href;
     console.log(link);
 
-    container.innerHTML = "<iframe width='420' height='315' src='"+ link +"'> </iframe>"
+    container.innerHTML = "<iframe width='420' height='230' src='"+ link +"'> </iframe>"
       
     }
 });
 
 
 clear.addEventListener("click",()=>{
+    container.innerHTML = "<p class='error'>Add a song!</p>"
     input.value = "";
+    
 })
-
-
 

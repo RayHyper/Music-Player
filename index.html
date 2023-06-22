@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Music Player</h1>
+    <div class="box">
 
-    <div id="container">
+            <h1>Audiohype Player</h1>
+
+            <div id="container" class="container">
+                <p class="error">No Song Found</p>
+            </div>
+
+        <input type="text" id="input"  placeholder="Enter video url">
+
+        <div class="beside">
+
+            <button id="button" class="add_button">Add</button>
+            <button id="clear" class="clear">Clear</button>
+        </div>
+       
+
+        <ul id="list">
+            
+        </ul>
     </div>
-
-<input type="text" id="input">
-
-<button id="button">Add</button>
-<button id="clear">Clear</button>
-
-<ul id="list">
-    
-</ul>
 
 <script src="app.js"></script>
 </body>

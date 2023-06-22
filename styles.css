@@ -1,0 +1,114 @@
+body{
+    background-image: url("wallpapersden.com_synthwave-planet-retro-wave_1920x1080.jpg");
+    background-size: 1500px;
+}
+
+iframe{
+    border-radius: 10px;
+    border: none;
+  
+}
+
+.container{
+    border-radius: 10px;
+    background-color: rgb(98, 103, 126);
+    width:420px;
+    height:230px;
+    margin:10px 100px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+}
+
+
+
+div > p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    border:none;
+    border-radius: 5px;
+    padding:5px 12px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin:3px;
+    width:100px;
+}
+
+h1{
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+.add_button{
+    background-color:greenyellow;
+    height:40px;
+    width: 80%;
+ 
+  
+}
+.beside{
+    display: flex;
+}
+
+.clear{
+    background-color:rgb(251, 255, 0);
+    width: 20%;
+    height:40px;
+    
+}
+
+.play{
+    background-color: rgb(20, 148, 186);
+}
+
+.remove{
+    background-color: red;
+}
+
+
+li{
+    list-style: none;
+    background-color: rgba(16, 52, 172, 0.815);
+    border-radius: 6px;
+    text-align: center;
+}
+a{
+    color:white;
+   
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+
+    width:600px;
+    margin:auto;
+
+}
+  
+
+input{
+    width:100%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
