@@ -8,33 +8,52 @@ const container = document.getElementById("container");
 
 const clear = document.getElementById("clear");
 const list = document.getElementById("list");
-
-let songs = [];
+const remove = document.getElementsByClassName("remove");
 
 
 
 button.addEventListener("click",()=>{
 
 
-        //copy and paste yt link here
+    if(input.value !== ""){
+                //copy and paste yt link here
     let link = input.value;
 
-        //converts it to usable link with js
-    let code = "https://youtube.com/embed/" + link.slice(17)
+    //converts it to usable link with js
+let code = "https://youtube.com/embed/" + link.slice(17);
 
 
-    container.innerHTML = "<iframe width='420' height='315' src='"+ code +"'> </iframe>"
-
-    songs.push("<li><a href='"+ code +"'>"+code+"</a></li>")
-
-    list.innerHTML = "";
+container.innerHTML = "<iframe  width='420' height='315' src='"+ code +"' > </iframe>"
 
 
-    for(let i =0; i<songs.length; i++){
-        list.innerHTML += songs[i];
+list.innerHTML += "<li><a href='"+ code +"'>"+code+"</a><button class='play'>Play</button> <button class='remove'>Remove</button> </li> ";
+
     }
+
+
+
+
+  
     
 })
+
+
+list.addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove")) {
+        event.target.parentNode.remove();
+    }
+});
+
+list.addEventListener("click", (event) => {
+    if (event.target.classList.contains("play")) {
+
+        const link = event.target.previousElementSibling.href;
+    console.log(link);
+
+    container.innerHTML = "<iframe width='420' height='315' src='"+ link +"'> </iframe>"
+      
+    }
+});
 
 
 clear.addEventListener("click",()=>{
